@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>片岡潤隆</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/send.js"></script>
+    <script src="./js/hover.js"></script>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>
+
+  </head>
+  <body>
+
+    <!----------------- ヘッダーの記述 始まり ------------------->
+    <header class="header" id="top">
+      <div class="header__slideshow">
+        <div class="header__title--name">片岡　潤隆</div>
+        <div class="header__title--name">Hirotaka Kataoka</div>
+      </div>
+      <p class="header__title--sub">HIROTAKA KATAOKA OFFICIAL WEBSITE</p>
+      <div class="header__buttons">
+        <a class="header__button" id="header-button1" href="#about">LEARN MORE</a>
+        <a class="header__button header__button--contact" id="header-button2" href="#contact">SEND MESSAGE</a>
+      </div>
+    </header>
+    <!----------------- ヘッダーの記述 終わり ------------------->
+
+    <!----------------- section 自己紹介 始まり ------------------->
+    <section class="about" id="about">
+      <h1 class="heading">ABOUT</h1>
+      <p class="about__text">
+        はじめまして。片岡潤隆と申します。<br>
+        1994年5月12日生まれの25歳です。
+      </p>
+    </section>
+    <!----------------- section 自己紹介 終わり ------------------->
+
+    <!----------------- section WORKS 始まり ------------------->
+    <section class="works">
+      <h1 class="heading">WORKS</h1>
+      <ul class="works__wrapper">
+
+        <li class="works__cards">
+          <img class="works__cards--img" src="https://edridge.co/wp-content/uploads/2019/05/Concierge-740x440.png" alt="">
+          <div class="works__cards--content">
+            <h1 class="works__cards--title">葬儀コンシェル</h1>
+            <p class="works__cards--text">
+              フォームのコーディングと <br>
+              フォーム登録内容の送受信機能を実装しました
+            </p>
+          </div>
+          <div class="works__cards--link">
+            <button id="card-button1" class="works__cards--button" type="button" onclick="location.href='https://xn--hckxam3skb2412b1hxe.com/form/form_request/'" >Website</button>
+          </div>
+        </li>
+
+        <li class="works__cards">
+          <img class="works__cards--img" src="./images/zoho-form.png" alt="">
+          <div class="works__cards--content">
+            <h1 class="works__cards--title">CRM用データ登録フォーム</h1>
+            <p class="works__cards--text">デザイン、コーディング、<br> フォーム登録内容の送受信機能を実装しました</p>
+          </div>
+          <div class="works__cards--link">
+            <button id="card-button2" class="works__cards--button" type="button" onclick="location.href='http://victorialabo.work/kataoka/zoho_form/'" >Website</button>
+          </div>
+        </li>
+        
+        
+      </ul>
+
+    </section>
+    <!----------------- section WORKS 終わり ------------------->
+    <!----------------- section skills 始まり ------------------->
+    <section class="skills">
+      <h1 class="heading">MY SKILLS</h1>
+      <ul class="skills__wrapper">
+
+        <li class="skills__contnt">
+          <h1 class="skills__content--title">コーディング</h1>
+          <p class="skills__content--sub">CODING</p>
+          <div class="skills__content--icon">
+            <img src="https://u-d-l.jp/wp-content/themes/underline/images/icon_service03.jpg" alt="">
+          </div>
+          <p class="skills__content--text">
+            HTML&CSS、Jqueryを用いたサイト制作、コーディングができます。
+          </p>
+        </li>
+
+      </ul>
+    </section>
+    <!----------------- section skills 終わり ------------------->
+
+    <!----------------- section contact 始まり ------------------->
+    <section class="contact" id="contact">
+      <h1 class="heading">CONTACT</h1>
+      <form class="contact__form">
+        <div class="contact__form--content">
+          <p class="contact__form--text">貴社名</p>
+          <input type="text" name="company">
+        </div>
+
+        <div class="contact__form--content">
+          <p class="contact__form--text">お名前</p>
+          <input type="text" name="name">
+        </div>
+
+        <div class="contact__form--content">
+          <p class="contact__form--text">メールアドレス</p>
+          <input type="text" name="mail">
+        </div>
+
+        <div class="contact__form--content">
+          <p class="contact__form--text">お問い合わせ内容</p>
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="contact__form--content">
+          <button type="button" class="contact__form--button" id="form-button">
+            SUBMIT
+          </button>
+        </div>
+        
+
+        <!-- お問い合わせ完了ポップアップ -->
+        <div class="popup">
+          <div class="popup__content">
+            <p class="popup__content--text">
+              お問い合わせ完了しました！ <br>
+              ありがとうございます
+            </p>
+            <button id="close">Close</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!----------------- section contact 終わり ------------------->
+    
+    <footer class="footer">
+      <p class="footer__text">HIROTAKA KATAOKA OFFICIAL WEBSITE</p>
+      <div class="footer__button--scroll">
+        <a href="#top"></a>
+      </div>
+    </footer>
+  </body>
+
+</html>
