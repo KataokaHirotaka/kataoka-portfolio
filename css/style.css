@@ -7,7 +7,6 @@
 
 .header__slideshow {
   position: relative;
-  min-width: 960px;
   height: 190px;
 }
 
@@ -44,6 +43,16 @@
 
 .header__button--contact {
   background-color: #e89936;
+}
+
+@media (max-width: 768px) {
+  .header__title--name {
+    font-size: 5rem;
+  }
+
+  .header__button {
+    margin-top: 50px;
+  }
 }
 
 /* ------------header css 終わり ------------ */
@@ -134,13 +143,11 @@
   cursor: pointer;
 }
 
-
-
-/* .works__cards--link:hover,
-.works__cards--link a:hover {
-  background-color: #BBFFFF;
-  color: #fff;
-} */
+@media (max-width: 768px) {
+  .works__wrapper {
+    display: block;
+  }
+}
 
 /* ------------- works css 終わり ---------------- */
 
@@ -168,6 +175,14 @@
 .skills__content--icon img {
   width: 5%;
 }
+
+@media (max-width: 768px) {
+  .skills__content--text {
+    margin: 0 30px;
+  }
+}
+
+
 
 /* ------------- skills css 終わり ---------------- */
 
@@ -212,6 +227,12 @@
   border: 2px solid #999;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact__form {
+    width: 70%;
+  }
 }
 
 
