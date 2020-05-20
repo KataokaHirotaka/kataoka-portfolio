@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="./js/send.js"></script>
-    <script src="./js/hover.js"></script>
-    <script src="./js/slideshow.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/popup.js"></script>
 </body>
 </html>
 
@@ -28,8 +21,18 @@
       </div>
       <p class="header__title--sub">HIROTAKA KATAOKA OFFICIAL WEBSITE</p>
       <div class="header__buttons">
-        <a class="header__button" id="header-button1" href="#about">LEARN MORE</a>
-        <a class="header__button header__button--contact" id="header-button2" href="#contact">SEND MESSAGE</a>
+        <a class="header__button" id="header-button1" href="#about">
+          <p class="header__button--text">About</p>
+        </a>
+        <a class="header__button" id="header-button2" href="#about">
+          <p class="header__button--text">Works</p>
+        </a>
+        <a class="header__button" id="header-button3" href="#about">
+          <p class="header__button--text">Skills</p>
+        </a>
+        <a class="header__button header__button--contact" id="header-button4" href="#contact">
+          <p class="header__button--text">Contact</p>
+        </a>
       </div>
     </header>
     <!----------------- ヘッダーの記述 終わり ------------------->
@@ -39,13 +42,13 @@
       <h1 class="heading">ABOUT</h1>
       <p class="about__text">
         はじめまして。片岡潤隆と申します。<br>
-        1994年5月12日生まれの25歳です。
+        1994年5月12日生まれの26歳です。
       </p>
     </section>
     <!----------------- section 自己紹介 終わり ------------------->
 
     <!----------------- section WORKS 始まり ------------------->
-    <section class="works">
+    <section class="works" id=works>
       <h1 class="heading">WORKS</h1>
       <ul class="works__wrapper">
 
@@ -80,7 +83,7 @@
     </section>
     <!----------------- section WORKS 終わり ------------------->
     <!----------------- section skills 始まり ------------------->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1 class="heading">MY SKILLS</h1>
       <ul class="skills__wrapper">
         <li class="skills__contnt">
@@ -148,6 +151,16 @@
         <a href="#top"></a>
       </div>
     </footer>
+
+    <!-- jsファイル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/send.js"></script>
+    <script src="./js/hover.js"></script>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/animation.js"></script>
   </body>
 
 </html>

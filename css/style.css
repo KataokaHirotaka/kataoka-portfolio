@@ -1,69 +1,86 @@
+@charset "UTF-8";
 /* ------------header css 始まり ------------ */
 .header {
   padding: 100px 30px 80px;
   letter-spacing: 1px;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .header__slideshow {
   position: relative;
-  height: 190px;
-}
+  height: 190px; }
 
 .header__title--name {
   position: absolute;
   width: 100%;
   margin: 0 auto;
   font-size: 8rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .header__title--sub {
-  font-size: 1.5rem;
-}
-
+  font-size: 1.5rem; }
 
 .header__title--name {
-  display: none;
-}
+  display: none; }
 
 .header__button {
   display: inline-block;
-  width: 200px;
+  width: 100px;
+  height: 100px;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 50%;
   margin: 80px 30px 0 30px;
   background-color: #7d7070;
   color: #fff;
-  font-size: 1.5rem;
-  
-}
-
-
+  font-size: 1.5rem; }
 
 .header__button--contact {
-  background-color: #e89936;
+  background-color: #e89936; }
+
+
+.header__button--text {
+  letter-spacing: 1.2px;
+}
+
+.header__sticky--wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b3f7f7;
+}
+
+.header__sticky--content {
+  padding: 10px 40px;
 }
 
 @media (max-width: 768px) {
+
+  .header {
+    padding-top: 50px;
+  }
   .header__title--name {
-    font-size: 5rem;
+    font-size: 5rem; }
+  .header__button {
+    margin-top: 50px; }
+  
+  .header__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .header__button {
-    margin-top: 50px;
+    width: 29%;
+    height: 29%;
   }
-}
+
+  }
 
 /* ------------header css 終わり ------------ */
-
 /* ------------about css 始まり ------------ */
-
 .about {
   padding: 80px 30px;
   background-color: #fff;
   color: #333;
-}
+  }
 
 .heading {
   position: relative;
@@ -71,66 +88,53 @@
   margin: 30px 0 15px;
   padding-bottom: 15px;
   letter-spacing: 2px;
-  font-size: 4rem;
-}
-
-.heading::before,
-.heading::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid #999;
-}
-
-.heading::before {
-  bottom: 5px;
-}
+  font-size: 4rem; }
+  .heading::before, .heading::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999; }
+  .heading::before {
+    bottom: 5px; }
 
 .about__text {
+  opacity: 0;
   margin: 30px 0;
-  line-height: 2.5;
-}
+  line-height: 2.5; }
 
 /* ------------about css 終わり ------------ */
-
 /* ------------- works css 始まり ---------------- */
 .works {
-  padding: 80px 0;
-}
+  padding: 80px 0; }
 
 .works__wrapper {
   display: flex;
-  width: 100%;
-}
+  width: 100%; }
 
 .works__cards--img {
   width: 100%;
   height: 50%;
-  border-radius: 6px;
-}
+  border-radius: 6px; }
 
 .works__cards {
+  opacity: 0;
   width: 320px;
   height: 380px;
   border-radius: 6px;
   color: #333;
   background-color: #fff;
   margin: 30px auto;
-  box-shadow: 0 2px 2px #fff;
-
-}
+  box-shadow: 0 2px 2px #fff; }
 
 .works__cards--title {
   font-size: 1.8rem;
   font-weight: 400;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .works__cards--text {
-  color: #999;
-}
+  color: #999; }
 
 .works__cards--button {
   margin: 0 auto;
@@ -140,83 +144,65 @@
   padding: 10px 5px;
   border: 0px solid #25e2e2;
   border-radius: 22px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 @media (max-width: 768px) {
   .works__wrapper {
-    display: block;
-  }
-}
+    display: block; } }
 
 /* ------------- works css 終わり ---------------- */
-
-
 /* ------------- skills css 始まり ---------------- */
-
 .skills {
   padding: 80px 0;
   background-color: #FFF;
-  color: #333;
-}
+  color: #333; }
 
+  .skills__wrapper {
+    opacity: 0;
+  }
 
 .skills__content--title {
   font-size: 2.2rem;
   font-weight: 400;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .skills__content--sub {
   color: #999;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .skills__content--icon img {
-  width: 5%;
-}
+  width: 5%; }
 
 @media (max-width: 768px) {
   .skills__content--text {
-    margin: 0 30px;
-  }
-}
-
-
+    margin: 0 30px; } }
 
 /* ------------- skills css 終わり ---------------- */
-
 /* ------------- contact css 始まり ---------------- */
 .contact {
   padding: 80px 0;
-  color: #fff;
-}
+  color: #fff; }
 
 .contact__form {
   width: 20%;
   margin: 0 auto;
-  text-align: left;
-}
+  text-align: left; }
 
 .contact__form--content {
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 .contact__form--text {
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .contact__form--content input {
   padding: 10px 20px;
   border-radius: 4px;
-  width: 90%;
-}
+  width: 90%; }
 
 .contact__form--content textarea {
   padding: 10px 20px;
   border-radius: 4px;
-  width: 100%;
-}
+  width: 100%; }
 
 .contact__form--button {
   width: 50%;
@@ -226,54 +212,37 @@
   font-size: 1.4rem;
   border: 2px solid #999;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 @media (max-width: 768px) {
   .contact__form {
-    width: 70%;
-  }
-}
-
-
-
+    width: 70%; } }
 
 /* ------------- contact css 終わり ---------------- */
-
-
 /* ------------- footer css 始まり ---------------- */
 .footer {
   background-color: #fff;
-  padding: 80px 0;
-}
+  padding: 80px 0; }
 
 .footer__button--scroll {
   width: 60px;
   height: 60px;
   position: fixed;
   right: 35px;
-  bottom: 20px;
-}
-
-.footer__button--scroll a {
-  width: 60px;
-  height: 60px;
-}
-
-.footer__button--scroll a::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f139';
-  font-size: 5rem;
-  color: #3fefee;
-  font-size: 5rem;
-}
+  bottom: 20px; }
+  .footer__button--scroll a {
+    width: 60px;
+    height: 60px; }
+    .footer__button--scroll a::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f139';
+      font-size: 5rem;
+      color: #3fefee;
+      font-size: 5rem; }
 
 .footer__text {
-  color: #999;
-}
-
-
+  color: #999; }
 
 /* --- ポップアップ 始まり --- */
 .popup {
@@ -284,8 +253,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
-}
+  z-index: 3; }
 
 .popup__content {
   background: #fff;
@@ -293,20 +261,16 @@
   height: 250px;
   text-align: center;
   border-radius: 4px;
-  margin: auto;
-}
+  margin: auto; }
 
 .popup__content--text {
   color: #999;
-  font-weight: bold;
-}
-
+  font-weight: bold; }
 
 .show {
   display: flex;
   justify-content: center;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .popup__content button {
   padding: 15px 25px;
@@ -315,16 +279,68 @@
   border: 1px solid #999;
   background-color: #fff;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; }
 
+/* --- ポップアップ 終わり --- */
+/* ------------- footer css 終わり ---------------- */
+
+
+/* ---------- アニメーション　始まり --------- */
+
+.about-left {
+  opacity: 0;
+  animation-name: about;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes about {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 
+.works-right {
+  opacity: 0;
+  animation-name: works;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 
 
+@keyframes works {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-/* --- ポップアップ 終わり --- */
+.skills-left {
+  opacity: 0;
+  animation-name: skills;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 
-
-/* ------------- footer css 終わり ---------------- */
+@keyframes skills {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ---------- アニメーション　終わり --------- */
 
